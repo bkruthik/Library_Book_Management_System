@@ -7,11 +7,11 @@ from library import Library
 def main():
     # Set up the database and tables when the program starts
     setup_database()
-
     book = Book()
     member = Member()
     library = Library()
 
+    
     while True:
         print("\n===== Library Management System =====")
         print("1. Add Book")
