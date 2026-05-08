@@ -2,6 +2,7 @@ from database import get_connection
 
 
 class Member:
+    
 
     def add_member(self, name, email):
         connection = get_connection()
@@ -16,6 +17,7 @@ class Member:
         cursor.close()
         connection.close()
         print(f'Member "{name}" added successfully.')
+        
 
     def view_all_members(self):
         connection = get_connection()
@@ -26,6 +28,7 @@ class Member:
 
         cursor.close()
         connection.close()
+        
 
         if not members:
             print("No members registered yet.")
