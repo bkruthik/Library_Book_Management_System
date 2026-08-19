@@ -1,6 +1,5 @@
 from database import get_connection
 
-
 class Book:
 
     def add_book(self, title, author):
