@@ -11,7 +11,7 @@ def get_connection():
 
 
 def setup_database():
-    # Connect without selecting a database first, so we can create it
+    
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
@@ -39,7 +39,7 @@ def setup_database():
         )
     """)
 
-    # transactions links a book and a member together
+  
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS transactions (
             id INT AUTO_INCREMENT PRIMARY KEY,
